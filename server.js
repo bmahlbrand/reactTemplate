@@ -8,5 +8,5 @@ app.use('*', (req, res) => {
 });
 
 app.listen(config.port, () => {
-    console.log(config.appname, 'Live at Port', config.port);
+    console.log(config.appname, ' is live at Port:', config.port);
 });

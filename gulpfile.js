@@ -105,6 +105,17 @@ process.on('SIGINT', () => {
     process.exit();
 });
 
+process.on('SIGTERM', () => {
+    console.log(`DEV: exiting server at ${new Date().toISOString()}`);
+    process.exit();
+});
+
+process.on('uncaughtException', (err) => {
+    console.log(err);
+    server.kill();
+    process.kill();
+});
+
 gulp.task('run', ['lint'], () => {
     if (isRunning) {
         server.stop();
