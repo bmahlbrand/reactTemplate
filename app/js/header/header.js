@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import {Link} from 'react-router';
 
 class Header extends Component {
-	render() {
+    render() {
         return (
-        	<h1>Teh Headah</h1>
-        )
+            <h1>Teh Headah</h1>
+        );
     };
 };

@@ -112,6 +112,7 @@
     "defaultParams": true,
     "destructuring": true,
     "modules": true,
+    "jsx": true,
     "objectLiteralShorthandMethods": true,
     "objectLiteralShorthandProperties": true,
     "restParams": true,
